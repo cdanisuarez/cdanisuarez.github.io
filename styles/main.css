@@ -58,13 +58,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main .summary {
-  max-width: 670px;
+  max-width: 70%;
   line-height: 1.5;
   font-size: 20px;
   margin-bottom: 75px;
 }
 
-.main .social {
+.main .social .description {
   font-size: 18px;
 }
 
@@ -112,4 +112,100 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer .info {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    height: 300px;
+  }
+
+  .header .greeting {
+    font-size: 60px;
+  }
+
+  .header .role {
+    font-size: 40px;
+  }
+
+  .main .photo {
+    width: 250px;
+    left: 75%;
+  }
+
+  .main .summary {
+    font-size: 25px;
+  }
+
+  .main .social .description {
+    font-size: 22px;
+  }
+
+  .main .social .social-link {
+    font-size: 60px;
+  }
+
+  .footer {
+    height: 120px;
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    padding: 20px
+  }
+
+  .header .greeting {
+    font-size: 25px;
+  }
+
+  .header .role {
+    font-size: 20px;
+  }
+
+  .main .photo {
+    position: relative;
+    top: -60px;
+    left: 33%;
+    width: 130px;
+  }
+
+  .main .summary {
+    max-width: 100%;
+    font-size: 18px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+
+  .main .social .description{
+    font-size: 17px;
+  }
+
+  .footer {
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .footer .info {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main .photo {
+    top: -52px;
+    left: 28%;
+  }
+
+  .main .social ul {
+    margin-top: 30px;
+  }
+
+  .main .social .social-link {
+    font-size: 35px;
+  }
 }
