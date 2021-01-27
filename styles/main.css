@@ -1,0 +1,115 @@
+@import './icons.css';
+@import './colors.css';
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Fira Code', monospace, 'Arial';
+  margin: 0;
+  padding: 0;
+  color: var(--color-four);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.header {
+  background-color: var(--color-one);
+  height: 250px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header .greeting {
+  font-size: 40px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.header .role {
+  font-size: 30px;
+}
+
+.header .role span {
+  text-decoration: underline;
+}
+
+.main {
+  padding: 30px;
+}
+
+.main .photo {
+  position: fixed;
+  left: 70%;
+  top: 28%;
+  width: 200px;
+  box-shadow: 0 0 0 5px white;
+  border-radius: 50%;
+}
+
+.main .photo img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.main .summary {
+  max-width: 670px;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 75px;
+}
+
+.main .social {
+  font-size: 18px;
+}
+
+.main .social .username {
+  color: var(--color-two);
+  font-weight: bold;
+}
+
+.main .social ul {
+  margin-top: 50px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .social li {
+  list-style: none;
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.main .social .social-link {
+  text-decoration: none;
+  color: var(--color-four);
+  font-size: 45px;
+}
+
+.main .social .social-link:hover {
+  color: var(--color-two);
+}
+
+.footer {
+  background-color: var(--color-four);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footer .info {
+  margin-right: 30px;
+}
