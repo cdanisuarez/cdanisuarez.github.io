@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   background-color: var(--color-one);
   height: 30%;
+  width: 100%;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -44,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main {
-  height: 50%;
   padding: 30px;
 }
 
@@ -112,12 +112,12 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  padding: 15px 0;
 }
 
 .footer .info {
   margin-right: 30px;
 }
-
 
 @media screen and (min-width: 1440px) {
   .header .greeting {
@@ -159,6 +159,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .header .greeting {
+    text-align: center;
     font-size: 25px;
   }
 
@@ -166,14 +167,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
   }
 
-  .main {
-    margin-top: 130px;
-  }
-
   .main .photo {
     width: 130px;
-    top: 20%;
-    left: 36%;
+    position: relative;
+    left: 32%;
+    top: -32px;
   }
 
   .main .summary {
@@ -200,10 +198,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media screen and (max-width: 375px) {
-  .main .photo {
-    left: 34%;
-  }
-
   .main .social ul {
     margin-top: 30px;
   }
@@ -215,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 320px) {
   .main .photo {
-    left: 32%;
+    left: 25%;
+    top: -38px;
   }
 }
