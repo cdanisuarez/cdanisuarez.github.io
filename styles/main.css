@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 .header .photo {
   position: absolute;
   border-radius: 50%;
-  width: 150px;
+  width: 120px;
   box-shadow: 0 0 0 5px white;
   top: 90%;
   left: 0; 
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.8em 0.8em;
+  padding: 0.8em;
   text-align: center;
 }
 
@@ -122,6 +122,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 425px) {
+  .header .photo {
+    width: 150px;
+  }
+
   .main .summary {
     margin-top: 4em;
   }
