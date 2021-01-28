@@ -177,3 +177,32 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.8em;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 23px;
+  }
+
+  .header {
+    height: 300px;
+  }
+
+  .header .photo {
+    top: 75%;
+    left: 75%;
+    right: 25%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  body {
+    font-size: 45px;
+  }
+
+  .header .photo {
+    width: 400px;
+    top: 75%;
+    left: 75%;
+    right: 25%;
+  }
+}
